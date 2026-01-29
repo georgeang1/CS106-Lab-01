@@ -10,7 +10,9 @@
  */
 int upperBits(int n)
 {
-    return 2;
+    return ((1 << 31) >> (n - 1)) & ((!!n) << 31) >> 31;
+    // ((1 << 31) >> (n + (~0)) & ((!!n) << 31) >> 31
+
 }
 
 int test_upperBits(int x)

@@ -6,9 +6,9 @@
  *   Max ops: 4
  *   Rating: 1
  */
-int tmax(void)
+int tmax(void) //1000 0000
 {
-    return 2;
+    return ~(1 << 31); // ^(-1)
 }
 
 int test_tmax(void)

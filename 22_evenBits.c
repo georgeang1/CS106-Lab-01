@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /* 
- * evenBits - return word with all even-numbered bits set to 1
+ * evenBits - return word with all even-numbered bits set to 1 
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 8
  *   Rating: 1
  */
-int evenBits(void)
+int evenBits(void) // 1011 -> 0101
 {
-    return 2;
+    return 0x55 | (0x55 << 8) | (0x55 << 16) | (0x55 << 24);
 }
 
 int test_evenBits(void)

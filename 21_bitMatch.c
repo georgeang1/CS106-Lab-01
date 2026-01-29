@@ -8,9 +8,9 @@
  *   Max ops: 14
  *   Rating: 1
  */
-int bitMatch(int x, int y)
+int bitMatch(int x, int y) // 0101 1100
 {
-    return 2;
+    return (x & y) | (~x & ~y);
 }
 
 int test_bitMatch(int x, int y)
